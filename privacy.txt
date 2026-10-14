@@ -1,0 +1,147 @@
+PRIVACY POLICY FOR WISEVPN
+
+Effective Date: October 14, 2026
+Last Updated: October 14, 2026
+
+This Privacy Policy describes how WiseVPN ("we", "us", or "our", package name: ai.wise.vpn) collects, uses, protects, and discloses information when you download, install, and use our mobile application (the "App") available on Google Play.
+
+We respect your personal privacy and are committed to maintaining the confidentiality and integrity of your data. Please read this Privacy Policy carefully to understand our practices regarding your information.
+
+================================================================================
+1. CORE PURPOSE AND USE OF ANDROID VPNSERVICE
+================================================================================
+
+WiseVPN is a virtual private network (VPN) client application designed to provide secure and encrypted Internet connectivity.
+
+Mandatory Google Play VpnService Disclosure:
+- Use of VpnService: Our App utilizes the Android VpnService (android.net.VpnService) API to create a secure, encrypted, device-level network tunnel between your Android device and remote VPN servers.
+- Core Purpose: The primary and exclusive purpose of utilizing VpnService is to encrypt your incoming and outgoing Internet data packets, safeguarding your communications on public, cellular, and untrusted Wi-Fi networks.
+- Traffic Encryption: All data transmitted through the tunnel is encrypted using industry-standard cryptographic protocols (including SSL/TLS and DTLS) from your device to the VPN endpoint.
+- No Traffic Logging (Zero-Log Policy): We do NOT monitor, inspect, log, capture, record, store, or sell the contents of your Internet browsing activities, visited websites, destination IP addresses, DNS queries, or transferred payloads routed through the VPN tunnel.
+
+================================================================================
+2. INFORMATION WE COLLECT
+================================================================================
+
+To authenticate your access, manage your subscription/key validity, and ensure app stability, we collect and process only the minimum necessary information:
+
+A. Account & Authentication Information:
+- Username / Access Key: When you sign in to WiseVPN, you provide a username or authorization passkey. This identifier is used solely to authenticate your account and confirm active subscription status.
+- Account Expiration Data: We receive subscription validity and expiration dates returned by the authentication server to display your account status and authorize tunnel access.
+
+B. Device & Technical Identifiers:
+- Device Identifier (Android ID): When you authenticate your username/key, the app reads your device's unique identifier (Settings.Secure.ANDROID_ID) and transmits it securely to the authentication server.
+  * Purpose: This identifier is used strictly for license authentication, device authorization, and preventing concurrent account abuse or unauthorized credential sharing.
+  * We do not link this identifier to your personal real-world identity (such as your legal name or phone number).
+
+C. Network State & Connection Metrics:
+- Network Status: The app checks the state of your Wi-Fi and mobile network connections locally on your device to manage seamless connection switching and reconnect the VPN tunnel if your network drops or transitions.
+- Real-time Session Statistics: The app calculates uploaded (TX) and downloaded (RX) byte counters and connection duration strictly in real-time on your device to display active session stats in the UI. These live counters are not logged or stored on our external servers.
+
+D. App Analytics & Diagnostics (Google Firebase):
+We integrate Google Firebase SDKs (Firebase Remote Config and Firebase Analytics):
+- Firebase Remote Config: Retrieves operational settings, including VPN endpoints and authentication URLs, to ensure connection availability.
+- Firebase Analytics: Collects anonymous, aggregated technical metrics, such as device model, OS version, session durations, and crash logs to improve app performance and stability. For more details, visit Google's Privacy & Terms: https://policies.google.com/technologies/partner-sites
+
+================================================================================
+3. INFORMATION WE DO NOT COLLECT
+================================================================================
+
+We believe in maximum digital privacy. We explicitly do NOT collect, store, or monitor:
+- Browsing history, visited websites, or search queries.
+- Network traffic payloads, message content, or downloaded files.
+- Personal identity details (such as your legal name, home address, or phone number).
+- Precise GPS location data.
+- Financial, payment card, or banking details through the app.
+
+================================================================================
+4. HOW WE USE YOUR INFORMATION
+================================================================================
+
+We use the minimal data collected strictly for the following legitimate purposes:
+1. Authentication & Access Control: To verify that your username or passkey is active and authorized to connect.
+2. Device Enforcement: To bind active licenses to authorized devices and prevent unauthorized credential sharing.
+3. VPN Connection Management: To establish, maintain, and reconnect secure VPN tunnels to our servers.
+4. App Maintenance & Reliability: To monitor application crash rates, optimize server routing, and push configuration updates via Firebase Remote Config.
+5. Customer Support: To assist you when troubleshooting connection or authentication issues.
+
+================================================================================
+5. THIRD-PARTY SERVICES AND DATA SHARING
+================================================================================
+
+We do not sell, rent, trade, or share your data with third parties for commercial or advertising purposes. We utilize the following third-party infrastructure:
+
+- Google Firebase (Remote Config & Analytics): App configuration delivery, diagnostic analytics, and crash monitoring. Privacy Policy: https://policies.google.com/privacy
+- Authentication and VPN Server Infrastructure: Secure server endpoints to authenticate credentials and route encrypted tunnel traffic.
+
+We may disclose information only if strictly required by applicable law, court order, or governmental regulation.
+
+================================================================================
+6. ANDROID PERMISSIONS DECLARED
+================================================================================
+
+1. VPN Service (android.permission.BIND_VPN_SERVICE)
+   Required by Android to create and control the local VPN network interface and route encrypted traffic.
+
+2. Internet Access (android.permission.INTERNET)
+   Allows the app to contact authentication servers and transmit encrypted VPN traffic across the Internet.
+
+3. Access Network State (android.permission.ACCESS_NETWORK_STATE)
+   Detects whether the device is connected to Wi-Fi, cellular data, or offline to maintain tunnels.
+
+4. Access Wi-Fi State (android.permission.ACCESS_WIFI_STATE)
+   Monitors Wi-Fi connectivity to support automatic reconnection on Wi-Fi state changes.
+
+5. Wake Lock (android.permission.WAKE_LOCK)
+   Keeps the CPU active to prevent VPN tunnel interruption when the screen turns off.
+
+6. Receive Boot Completed (android.permission.RECEIVE_BOOT_COMPLETED)
+   Allows the app to handle connection states after device restart if configured.
+
+================================================================================
+7. DATA SECURITY AND ENCRYPTION
+================================================================================
+
+- Tunnel Encryption: VPN traffic routed through the app is encrypted using industry-standard cryptographic protocols (including SSL/TLS and DTLS).
+- Transmission Security: Communication between the app, Firebase, and authentication endpoints occurs over secure protocols.
+- Local Storage: Cached session keys and settings are stored within Android's protected application sandbox, accessible only by WiseVPN.
+
+================================================================================
+8. DATA RETENTION AND DELETION POLICY
+================================================================================
+
+In compliance with Google Play's User Data policy:
+
+- Retention Period: Local credentials and cached settings are retained locally on your device until you clear your credentials or uninstall the App. Server-side authentication logs (Android ID and username) are retained solely for the active duration of your license/subscription and purged thereafter.
+
+- How to Request Data Deletion:
+  * On your device: You can immediately erase locally cached credentials and session data by clearing the username field inside the app or by navigating to Android Settings > Apps > WiseVPN > Storage > Clear Data.
+  * Server-side deletion: You may request complete erasure of your account, username, and associated device identifiers from our authentication servers at any time by sending an email to our support address: vpnprobashi@gmail.com with the subject line "Data Deletion Request - WiseVPN". Requests are verified and processed within 30 days.
+
+================================================================================
+9. CHILDREN'S PRIVACY
+================================================================================
+
+WiseVPN does not knowingly collect, solicit, or store personal information from children under the age of 13 (or under 16 where applicable). The App is intended for a general audience. If we discover that a child under 13 has provided us with personal information, we will delete such data immediately.
+
+================================================================================
+10. YOUR RIGHTS (GDPR & CCPA/CPRA COMPLIANCE)
+================================================================================
+
+Depending on your jurisdiction, you have the right to request access, rectification, portability, or deletion of your personal data, or to object to processing. To exercise these rights, please contact us using the details below.
+
+================================================================================
+11. CHANGES TO THIS PRIVACY POLICY
+================================================================================
+
+We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this Privacy Policy periodically.
+
+================================================================================
+12. CONTACT US
+================================================================================
+
+If you have any questions or requests regarding this Privacy Policy, please contact us at:
+
+- App Name: WiseVPN (ai.wise.vpn)
+- Developer / Company Name: WiseVPN
+- Support Email: vpnprobashi@gmail.com
